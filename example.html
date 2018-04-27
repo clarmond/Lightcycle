@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Most Popular Images on images.nasa.gov</title>
+	<meta charset="utf-8" />
+	<!-- Required CSS -->
+	<link rel="stylesheet" href="dep/jquery-ui-1.12.1/jquery-ui.min.css" type="text/css" />
+	<link rel="stylesheet" href="dep/lightbox2-master/dist/css/lightbox.css" type="text/css" />
+	<link rel="stylesheet" href="css/lightcycle.css" type="text/css" />
+
+	<!-- Required JavaScript libraries -->
+	<script type="text/javascript" src="dep/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="dep/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="dep/jquery/jquery.easing.min.js"></script>
+
+	<!-- https://github.com/tuupola/jquery_lazyload/tree/2.x -->
+	<script type="text/javascript" src="dep/lazyload/lazyload.js"></script>
+
+	<!-- http://lokeshdhakar.com/projects/lightbox2/ -->
+	<script type="text/javascript" src="dep/lightbox2-master/dist/js/lightbox.js"></script>
+
+	<!-- https://gasparesganga.com/labs/jquery-loading-overlay/ -->
+	<script type="text/javascript" src="dep/jquery-loading-overlay/loadingoverlay.min.js"></script>
+
+	<!-- https://github.com/loganfranken/Cursometer -->
+	<script type="text/javascript" src="dep/jquery.cursometer.1.0.0.js"></script>
+
+	<!-- Set up Light Cycle Plug-in -->
+	<script type="text/javascript" src="js/lightcycle.js"></script>
+
+	<!-- Custom styling -->
+	<style>
+	body {
+		background-color: #5a5a5a;
+		color: #fff;
+		font-family: Arial, Helvetica, Sans-serif;
+		font-size: 10pt;
+	}
+	h1 {
+		padding: 3px;
+		text-align: center;
+	}
+	</style>
+</head>
+<body>
+	<h1>Most Popular Images on images.nasa.gov</h1>
+	<div id="lc-container"></div>
+	<script>
+		$("#lc-container").lightcycle({
+			source: 'example.json',
+			height: 'viewport'
+		});
+	</script>
+</body>
+</html>

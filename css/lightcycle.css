@@ -1,0 +1,67 @@
+@keyframes fade-in-image {
+	from { opacity: 0; transform:scale(5) rotate(180deg) }
+	to { opacity: 1; transform:scale(1) rotate(0) }
+}
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.lc-arrow-button {
+	background-color: #333;
+	border-radius: 5px;
+	color: white;
+	display: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 50px;
+	font-weight: bold;
+	opacity: .5;
+	padding: 10px 6px;
+	position: absolute;
+	z-index: 2;
+}
+.lc-arrow-button:hover {
+	opacity: .8;
+	cursor: pointer;
+}
+.lc-column {
+	float: left; 
+	text-align: center;
+	width: 160px;
+}
+.lc-container {
+	cursor: pointer;
+	height: 1000px;
+	margin: 0;
+	padding: 0;
+}
+.lc-container img {
+	animation: fade-in-image .5s;
+	background: linear-gradient(to bottom, #777, #333);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+	max-height: 150px;
+	max-width: 150px;
+	vertical-align: middle;
+}
+.lc-helper {
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+.lc-image-container {
+	box-sizing: border-box;
+	height: 160px;
+	margin: 0 5px 0 0;
+	width: 160px;
+	white-space: nowrap;
+}
+.lc-image-link {
+	color: #ccf;
+	font-style: italic;
+}
+/* Overwrite vendor styles */
+.lb-container,
+.lb-outerContainer {
+	background: linear-gradient(to bottom, #777, #333);
+	background-color: #333;
+}
